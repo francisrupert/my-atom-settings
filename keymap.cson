@@ -1,0 +1,45 @@
+# Your keymap
+#
+# Atom keymaps work similarly to style sheets. Just as style sheets use
+# selectors to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts. Unlike style sheets however,
+# each selector can only be declared once.
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab.
+#
+# Here's an example taken from Atom's built-in keymap:
+#
+# 'atom-text-editor':
+#   'enter': 'editor:newline'
+#
+# 'atom-workspace':
+#   'ctrl-shift-p': 'core:move-up'
+#   'ctrl-p': 'core:move-down'
+#
+# You can find more information about keymaps in these guides:
+# * https://atom.io/docs/latest/using-atom-basic-customization#customizing-key-bindings
+# * https://atom.io/docs/latest/behind-atom-keymaps-in-depth
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# https://atom.io/docs/latest/using-atom-basic-customization#cson
+
+'atom-workspace atom-text-editor:not([mini])':
+
+  # Folding
+  # 'f1': 'editor:fold-current-row'
+  'f1': 'editor:toggle-current-row-folding'
+  # 'f2': 'editor:unfold-current-row'
+  'ctrl-alt-0': 'editor:fold-all'
+  'ctrl-shift-alt-0': 'editor:unfold-all'
+
+  # Emmet
+  'ctrl-home': 'emmet:select-previous-item'
+  'ctrl-end': 'emmet:select-next-item'
+  'ctrl-shift-home': 'emmet:balance-outward'
+  'ctrl-shift-end': 'emmet:balance-inward'
+
+  # Clipboard Plus
+  'ctrl-shift-v': 'clipboard-plus:toggle'

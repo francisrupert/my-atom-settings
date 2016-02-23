@@ -1,2 +1,3 @@
-# my-atom-settings
-Atom Text Editor stuff
+# My Atom Settings
+
+Customizations for my [Atom Text Editor](https://atom.io/).

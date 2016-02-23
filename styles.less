@@ -1,0 +1,168 @@
+/*
+* Your Stylesheet
+*
+* This stylesheet is loaded when Atom starts up and is reloaded automatically
+* when it is changed and saved.
+*
+* Add your own CSS or Less to fully customize Atom.
+* If you are unfamiliar with Less, you can read more about it here:
+* http://lesscss.org
+*/
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+@import (reference) "syntax-variables";
+
+@syntax-text-color--yellow: rgba(255,255,0,0.8);
+
+///////////////////////////////////////////////////////////////////////////////
+
+.tree-view {
+  // background-color: rgba(255, 255, 255, 0.08);
+  font-size: 16px;
+}
+
+.preview-pane .results-view {
+  font-size: 18px;
+}
+
+.editor {}
+
+.editor.is-focused .cursor {}
+
+///////////////////////////////////////////////////////////////////////////////
+
+// style the background and foreground colors on the atom-text-editor-element itself
+atom-text-editor {
+  // color: white;
+  // background-color: hsl(180, 24%, 12%);
+}
+
+// To style other content in the text editor's shadow DOM, use the ::shadow expression
+atom-text-editor::shadow {
+
+  .gfm {
+
+    /* show markdown double-space line breaks */
+    .linebreak:after {
+      font-family: 'Octicons Regular';
+      font-weight: normal;
+      font-style: normal;
+      display: inline-block;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      text-decoration: none;
+      font-size: 1rem;
+      width: 1rem;
+      height: 1rem;
+      content: "\f0a9"; //found no better icon in octicons
+      color: @syntax-invisible-character-color;
+    }
+
+    &.heading-1,
+    &.heading-2,
+    &.heading-3 {
+
+      font-weight: bold;
+
+      .marker {
+        padding-left: 4px;
+        font-size: 1.1em;
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          left: 0;
+          right: 0;
+          border-top: 4px solid #c66;
+          height: 1.25em;
+          background-color: rgba(255,255,255,.08);
+        }
+
+      }
+
+    }
+
+    &.heading-2 {
+
+      .marker {
+
+        &::before {
+          border-top-width: 2px;
+        }
+
+      }
+
+    }
+
+    &.heading-3 {
+
+      .marker {
+
+        &::before {
+          border-top-width: 1px;
+          border-top-style: dotted;
+          background: transparent;
+        }
+
+      }
+
+    }
+
+  }
+
+  /* show invisibles only in selection */
+  // .invisible-character {
+  //     color: @syntax-background-color;
+  // }
+
+  .fold-marker {
+
+    /* customize the "ellipsis" */
+    &:after {
+      content: "\f09a \00a0 \f09a \00a0 \f09a"; // bullet: \2022
+      padding-left: 5px;
+    }
+
+    /* show a dotted line underneath folded lines */
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      border-bottom: 1px dashed lighten(@syntax-invisible-character-color,10%);
+    }
+
+  }
+
+  .cursor {
+
+    border-left-width: 8px;
+    border-left-color: @syntax-text-color--yellow;
+
+    &-line {
+
+      background-color: darken(@syntax-selection-color, 4.5%);
+
+      /* "focus" state of folded lines */
+      .fold-marker {
+        &::after {
+          color: @syntax-text-color--yellow;
+        }
+        &::before {
+          border-color: @syntax-text-color--yellow;
+        }
+      }
+
+    }
+
+  }
+
+  .gutter .line-number.folded .icon-right::before,
+  .gutter:hover .line-number.folded .icon-right::before {
+    color: @syntax-text-color--yellow;
+  }
+
+}
