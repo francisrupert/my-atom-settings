@@ -41,6 +41,7 @@
   'ctrl-end': 'emmet:select-next-item'
   'ctrl-shift-home': 'emmet:balance-outward'
   'ctrl-shift-end': 'emmet:balance-inward'
+  'ctrl-space': 'emmet:wrap-with-abbreviation'
 
   # Clipboard Plus
   'ctrl-shift-v': 'clipboard-plus:toggle'
