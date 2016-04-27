@@ -26,6 +26,7 @@
 # Atom Flight Manual:
 # https://atom.io/docs/latest/using-atom-basic-customization#cson
 
+#############################################################################
 'atom-workspace atom-text-editor:not([mini])':
 
   # Folding
@@ -43,3 +44,12 @@
 
   # Clipboard Plus
   'ctrl-shift-v': 'clipboard-plus:toggle'
+
+#############################################################################
+
+# Overriding Zen package's hijacking of Redo
+'.platform-win32 atom-workspace':
+  'ctrl-shift-Z': 'core:redo'
+
+'.platform-win32 atom-workspace atom-text-editor:not(.mini)':
+  'ctrl-shift-Z': 'core:redo'
