@@ -19,3 +19,54 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # https://atom.io/docs/latest/using-atom-basic-customization#cson
+
+# Snippet Format: https://github.com/atom/snippets
+
+
+################################################################################
+# HTML Snippets
+'.text.html, .text.html .meta.scope.between-tag-pair, .text.html .punctuation.tag.begin':
+
+  'Outline':
+    'prefix': 'outline'
+    'body': 'style="outline: 1px solid Orangered;$1"$0'
+
+  'data attribute':
+    'prefix': 'data'
+    'body': 'data-${1:behavior}=""'
+
+################################################################################
+# CSS / SCSS Snippets
+'.source.css, .source.scss, .source.sass, .source.less':
+
+  'Lint:SCSS Disable all':
+    'prefix': 'lint'
+    'body': '// scss-lint:disable ${1:all NestingDepth SelectorFormat TrailingSemicolon SpaceAfterPropertyColon}'
+
+  'Outline CSS':
+    'prefix': 'outline'
+    'body': 'outline: 1px solid red;$1'
+
+  'Centered Text':
+    'prefix': 'center'
+    'body': 'text-align: center;$1'
+
+  'Breakpoint':
+    'prefix': 'break'
+    'body': """
+      @include breakpoint(${1:XS S SM M MML ML MLL L XL XXL}${2:, down}) {
+        $0
+      }
+
+    """
+
+  'Breakpoint: USWDS':
+    'prefix': 'break:uswds'
+    'body': """
+      @include media(${1:$small-screen}${2: $medium-screen}${3: $large-screen}) {
+        $0
+      }
+    """
+
+################################################################################
+# JS Snippets
