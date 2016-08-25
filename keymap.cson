@@ -27,12 +27,22 @@
 # https://atom.io/docs/latest/using-atom-basic-customization#cson
 
 #############################################################################
+
+'.platform-win32, .platform-win32 .command-palette atom-text-editor':
+  'capslock capslock': 'command-palette:toggle'
+
+#############################################################################
+
+'body':
+  'ctrl-`': 'window:focus-previous-pane'
+  'ctrl-shift-up': 'editor:add-selection-above'
+  'ctrl-shift-down': 'editor:add-selection-below'
+
+#############################################################################
 'atom-workspace atom-text-editor:not([mini])':
 
   # Folding
-  # 'f1': 'editor:fold-current-row'
   'f1': 'editor:toggle-current-row-folding'
-  # 'f2': 'editor:unfold-current-row'
   'ctrl-alt-0': 'editor:fold-all'
   'ctrl-shift-alt-0': 'editor:unfold-all'
 
@@ -42,6 +52,8 @@
   'ctrl-shift-home': 'emmet:balance-outward'
   'ctrl-shift-end': 'emmet:balance-inward'
   'ctrl-space': 'emmet:wrap-with-abbreviation'
+  'alt-up': 'emmet:increment-number-by-1'
+  'alt-down': 'emmet:decrement-number-by-1'
 
   # Clipboard Plus
   'ctrl-shift-v': 'clipboard-plus:toggle'
