@@ -55,8 +55,15 @@
   'alt-up': 'emmet:increment-number-by-1'
   'alt-down': 'emmet:decrement-number-by-1'
 
+'.platform-win32 atom-workspace atom-text-editor:not([mini])':
+
   # Clipboard Plus
   'ctrl-shift-v': 'clipboard-plus:toggle'
+
+'.platform-darwin atom-workspace atom-text-editor:not([mini])':
+
+  # Clipboard Plus
+  'cmd-shift-v': 'clipboard-plus:toggle'
 
 #############################################################################
 
