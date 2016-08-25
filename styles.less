@@ -18,9 +18,16 @@
 
 ///////////////////////////////////////////////////////////////////////////////
 
+// Stronger highlight to active tab
+.tab-bar .tab::before {
+  right: 1px;
+  width: auto;
+  height: 3px;
+}
+
 .tree-view {
   // background-color: rgba(255, 255, 255, 0.08);
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .preview-pane .results-view {
@@ -167,7 +174,7 @@ atom-text-editor::shadow {
 
   // Makes the bracket matcher highlight more noticeable
   .bracket-matcher .region {
-    border: 1px solid yellow;
+    border: 1px solid @syntax-text-color--yellow;
   }
 
 }
