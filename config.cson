@@ -1,0 +1,158 @@
+"*":
+  Zen:
+    tabs: "multiple"
+  "atom-beautify":
+    _analyticsUserId: "47d8121d-8308-4fd4-a0aa-a43b629f316c"
+    apex: {}
+    arduino: {}
+    c: {}
+    cfml: {}
+    coffeescript: {}
+    cpp: {}
+    cs: {}
+    css: {}
+    d: {}
+    ejs: {}
+    erb: {}
+    fortran: {}
+    general:
+      _analyticsUserId: "910ce5d9-bcd5-4a6d-9a14-e10b33ec2eee"
+    gherkin: {}
+    handlebars: {}
+    html:
+      indent_size: 2
+      unformatted: [
+        "a"
+        "abbr"
+        "acronym"
+        "b"
+        "bdo"
+        "big"
+        "br"
+        "button"
+        "cite"
+        "code"
+        "data"
+        "del"
+        "dfn"
+        "em"
+        "i"
+        "img"
+        "input"
+        "ins"
+        "kbd"
+        "label"
+        "map"
+        "mark"
+        "object"
+        "pre"
+        "q"
+        "s"
+        "samp"
+        "script"
+        "select"
+        "small"
+        "span"
+        "strong"
+        "sub"
+        "sup"
+        "textarea"
+        "time"
+        "tt"
+        "u"
+        "var"
+      ]
+    jade: {}
+    java: {}
+    js: {}
+    json: {}
+    jsx: {}
+    latex: {}
+    less: {}
+    marko: {}
+    mustache: {}
+    objectivec: {}
+    pawn: {}
+    perl: {}
+    php: {}
+    python: {}
+    riot: {}
+    ruby: {}
+    rust: {}
+    sass: {}
+    scss: {}
+    spacebars: {}
+    sql: {}
+    svg: {}
+    swig: {}
+    tss: {}
+    twig: {}
+    typescript: {}
+    vala: {}
+    visualforce: {}
+    xml: {}
+    xtemplate: {}
+  "atom-terminal-panel": {}
+  "autocomplete-plus":
+    autoActivationDelay: 500
+    confirmCompletion: "enter"
+  "base16-syntax":
+    scheme: "Ashes"
+  build: {}
+  "clipboard-plus": {}
+  "command-palette":
+    preserveLastSearch: true
+  core:
+    autoHideMenuBar: true
+    disabledPackages: [
+      "git-time-machine"
+      "build"
+      "build-grunt"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "node_modules"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "dracula-theme"
+    ]
+  editor:
+    fontFamily: "\"Source Code Pro Light\", \"Source Code Pro\", \"Hasklig\", \"OpenDyslexicMono\", Menlo, Consolas, 'DejaVu Sans Mono', monospace;"
+    fontSize: 17
+    invisibles: {}
+    lineHeight: 1.7
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    zoomFontWhenCtrlScrolling: false
+  emmet: {}
+  "exception-reporting":
+    userId: "37093dde-5888-4b75-82a1-3bf085109d5d"
+  "file-icons": {}
+  "html-to-css":
+    "bem-group": true
+  jumpy:
+    fontSize: 1
+    highContrast: true
+  linter:
+    errorPanelHeight: 26
+  "linter-scss-lint": {}
+  "markdown-preview": {}
+  "merge-conflicts": {}
+  "one-dark-ui": {}
+  "open-recent": {}
+  pigments:
+    groupPaletteColors: "by file"
+    mergeColorDuplicates: true
+  "symbols-tree-view": {}
+  "tree-view":
+    showOnRightSide: true
+  welcome:
+    showOnStartup: false
