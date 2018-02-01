@@ -103,7 +103,6 @@
   "command-palette":
     preserveLastSearch: true
   core:
-    autoHideMenuBar: true
     disabledPackages: [
       "git-time-machine"
       "build"
@@ -113,19 +112,21 @@
       ".git"
       ".hg"
       ".svn"
+      ".idea"
       ".DS_Store"
       "._*"
       "Thumbs.db"
+      ".svn"
       "node_modules"
     ]
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
-      "dracula-theme"
+      "slime"
     ]
   editor:
     fontFamily: "\"Source Code Pro Light\", \"Source Code Pro\", \"Hasklig\", \"OpenDyslexicMono\", Menlo, Consolas, 'DejaVu Sans Mono', monospace;"
-    fontSize: 17
+    fontSize: 21
     invisibles: {}
     lineHeight: 1.7
     scrollPastEnd: true
