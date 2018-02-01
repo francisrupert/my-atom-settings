@@ -57,10 +57,14 @@
 
 '.platform-win32 atom-workspace atom-text-editor:not([mini])':
 
+  'ctrl-shift-delete': 'editor:delete-line'
+
   # Clipboard Plus
   'ctrl-shift-v': 'clipboard-plus:toggle'
 
 '.platform-darwin atom-workspace atom-text-editor:not([mini])':
+
+  'cmd-shift-delete': 'editor:delete-line'
 
   # Clipboard Plus
   'cmd-shift-v': 'clipboard-plus:toggle'
