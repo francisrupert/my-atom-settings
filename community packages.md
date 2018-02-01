@@ -18,7 +18,6 @@ jumpy
 linter
 linter-scss-lint
 merge-conflicts
-open-recent
 pen-paper-coffee-syntax
 pigments
 seti-ui
