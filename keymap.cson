@@ -35,6 +35,7 @@
 
 'body':
   'ctrl-`': 'window:focus-previous-pane'
+  'ctrl-shift-alt-s`': 'window:save-all'
   'ctrl-shift-up': 'editor:add-selection-above'
   'ctrl-shift-down': 'editor:add-selection-below'
 
