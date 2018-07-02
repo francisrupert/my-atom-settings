@@ -31,6 +31,9 @@
 '.platform-win32, .platform-win32 .command-palette atom-text-editor':
   'capslock capslock': 'command-palette:toggle'
 
+'.workspace':
+  'F10': 'github:toggle-git-tab'
+
 #############################################################################
 
 'body':
@@ -38,6 +41,8 @@
   'ctrl-shift-alt-s': 'window:save-all'
   'ctrl-shift-up': 'editor:add-selection-above'
   'ctrl-shift-down': 'editor:add-selection-below'
+  'F7': 'pane:split-right-and-copy-active-item'
+  'F9': 'pane:split-left-and-copy-active-item'
 
 #############################################################################
 'atom-workspace atom-text-editor:not([mini])':
