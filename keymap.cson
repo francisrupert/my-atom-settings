@@ -60,6 +60,7 @@
   'ctrl-space': 'emmet:wrap-with-abbreviation'
   'alt-up': 'emmet:increment-number-by-1'
   'alt-down': 'emmet:decrement-number-by-1'
+  'ctrl-shift-alt-delete': 'emmet:remove-tag'
 
 '.platform-win32 atom-workspace atom-text-editor:not([mini])':
 
