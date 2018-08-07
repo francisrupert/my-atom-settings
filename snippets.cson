@@ -31,6 +31,23 @@
     'prefix': 'outline'
     'body': 'css(\'outline\', \'2px solid ${1:red}\');$0'
 
+  'on behavior':
+    'prefix': 'on'
+    'body': """
+      on('${1:event}', '[data-behavior~="${2:blah}"]', function(event) {
+
+        var $self = $(this);
+        $0
+
+      })
+    """
+
+  'jq body':
+    'prefix': 'body'
+    'body': """
+      $('body')
+    """
+
 ################################################################################
 # HTML Snippets
 '.text.html, .text.html .meta.scope.between-tag-pair, .text.html .punctuation.tag.begin':
