@@ -27,6 +27,10 @@
 # JS Snippets
 '.text.js, .source.js':
 
+  'alert()':
+    'prefix': 'a'
+    'body': 'alert(\'$1\')$0'
+
   '$':
     'prefix': '$'
     'body': '$(\'$0\')'
@@ -63,6 +67,16 @@
   'Data Behavior':
     'prefix': 'data-behavior'
     'body': 'data-behavior="$0"'
+
+  'FSA Grid':
+    'prefix': 'grid'
+    'body': """
+      <div class="fsa-grid">
+        <div class="fsa-grid__1/1 fsa-grid__${1:1/2}@s fsa-grid__${2:1/4}@m">
+          $0
+        </div>
+      </div>
+    """
 
 ################################################################################
 # CSS / SCSS Snippets
