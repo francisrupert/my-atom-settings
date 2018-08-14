@@ -37,12 +37,13 @@
 #############################################################################
 
 'body':
-  'ctrl-`': 'window:focus-previous-pane'
   'ctrl-shift-alt-s': 'window:save-all'
   'ctrl-shift-up': 'editor:add-selection-above'
   'ctrl-shift-down': 'editor:add-selection-below'
-  'F7': 'pane:split-right-and-copy-active-item'
-  'F9': 'pane:split-left-and-copy-active-item'
+  'F7': 'pane:split-left-and-copy-active-item'
+  'F9': 'pane:split-right-and-copy-active-item'
+  'ctrl-shift-pageup': 'window:focus-previous-pane'
+  'ctrl-shift-pagedown': 'window:focus-next-pane'
 
 #############################################################################
 'atom-workspace atom-text-editor:not([mini])':
