@@ -90,9 +90,17 @@
     'prefix': 'outline'
     'body': 'outline: 1px solid red;$1'
 
+  'CSS Variable':
+    'prefix': 'var'
+    'body': 'var(--$1);$0'
+
   'Centered Text':
     'prefix': 'center'
     'body': 'text-align: center;$1'
+
+  'transition':
+    'prefix': 'transition'
+    'body': 'transition: all ${1:.23s} ease-in-out;$0'
 
   'Breakpoint':
     'prefix': 'break'
