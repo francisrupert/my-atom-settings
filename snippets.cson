@@ -35,6 +35,10 @@
     'prefix': '$'
     'body': '$(\'$0\')'
 
+  '$target':
+    'prefix': 'target'
+    'body': """var $target = $('#' + $self.attr('data-$1target'))$0"""
+
   'Outline':
     'prefix': 'outline'
     'body': 'css(\'outline\', \'2px solid ${1:red}\');$0'
@@ -67,6 +71,25 @@
   'Data Behavior':
     'prefix': 'data-behavior'
     'body': 'data-behavior="$0"'
+
+  'HBS:comment':
+    'prefix': 'hbs:comment'
+    'body': '{{!-- $1 --}}$0'
+
+  'HBS:snippets':
+    'prefix': 'hbs:snippet'
+    'body': """
+      <!--
+        if → {{#if }}
+        ifel → {{#if }} {{else}}
+        el → {{else}}
+        elif → {{else if }}
+        un → {{#unless }}
+        ea → {{#each }}
+        wi → {{#with }}
+        par → {{> }} (for partials)
+      -->
+    """
 
   'FSA Grid':
     'prefix': 'grid'
