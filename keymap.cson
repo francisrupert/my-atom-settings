@@ -31,6 +31,9 @@
 '.platform-win32, .platform-win32 .command-palette atom-text-editor':
   'capslock capslock': 'command-palette:toggle'
 
+'.platform-darwin, .platform-darwin .command-palette atom-text-editor':
+  'capslock capslock': 'command-palette:toggle'
+
 '.workspace':
   'F10': 'github:toggle-git-tab'
 
@@ -42,7 +45,9 @@
   'ctrl-shift-down': 'editor:add-selection-below'
   'F7': 'pane:split-left-and-copy-active-item'
   'F9': 'pane:split-right-and-copy-active-item'
-  'ctrl-shift-pageup': 'window:focus-previous-pane'
+  'cmd-shift-pageup':    'window:focus-previous-pane'
+  'ctrl-shift-pageup':   'window:focus-previous-pane'
+  'cmd-shift-pagedown':  'window:focus-next-pane'
   'ctrl-shift-pagedown': 'window:focus-next-pane'
 
 #############################################################################
@@ -50,8 +55,6 @@
 
   # Folding
   'f1': 'editor:toggle-current-row-folding'
-  'ctrl-alt-0': 'editor:fold-all'
-  'ctrl-shift-alt-0': 'editor:unfold-all'
 
   # Emmet
   'ctrl-home': 'emmet:select-previous-item'
@@ -59,7 +62,7 @@
   'ctrl-shift-home': 'emmet:balance-outward'
   'ctrl-shift-end': 'emmet:balance-inward'
   'ctrl-space': 'emmet:wrap-with-abbreviation'
-  'alt-up': 'emmet:increment-number-by-1'
+  'alt-up':   'emmet:increment-number-by-1'
   'alt-down': 'emmet:decrement-number-by-1'
   'ctrl-shift-alt-delete': 'emmet:remove-tag'
 
@@ -67,12 +70,20 @@
 
   'ctrl-shift-delete': 'editor:delete-line'
 
+  # Folding
+  'ctrl-alt-0':       'editor:fold-all'
+  'ctrl-shift-alt-0': 'editor:unfold-all'
+
   # Clipboard Plus
   'ctrl-shift-v': 'clipboard-plus:toggle'
 
 '.platform-darwin atom-workspace atom-text-editor:not([mini])':
 
   'cmd-shift-delete': 'editor:delete-line'
+
+  # Folding
+  'cmd-alt-0':        'editor:fold-all'
+  'cmd-shift-alt-0':  'editor:unfold-all'
 
   # Clipboard Plus
   'cmd-shift-v': 'clipboard-plus:toggle'
@@ -85,3 +96,4 @@
 
 '.platform-win32 atom-workspace atom-text-editor:not(.mini)':
   'ctrl-shift-Z': 'core:redo'
+  
