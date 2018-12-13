@@ -1,3 +1,18 @@
+### Last known
+```
+clipboard-plus
+cobalt2-syntax
+editorconfig
+emmet
+Handlebars
+hasklig
+slime
+Zen
+```
+
+### Earlier
+At one point I had all these, but the trash Windoze system couldn't handle this many, so were brought down to the above list.
+
 ```
 atom-beautify
 build
